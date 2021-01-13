@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.container-form-register{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+.container-form-register .form-regist{
+    align-self: center;
+}
+
+.container-form-login{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.container-form-login .form-login{
+    align-self: center;
+}
+
+.content{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.Backlog, .todo, .doing, .done{
+    align-self: center;
+}
+
+.container-form-add{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+
+.container-form-add .form-add{
+    align-self: center;
+}
+
+.kanban-todo{
+    height: 60vh;
+    overflow-y: scroll;
+}
