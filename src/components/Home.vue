@@ -1,10 +1,10 @@
 <template>
-    <div class="containter-content" >
+    <div class="container-content" >
         <div class="row content">
-          <p style="color: red;" > {{errAuth}}</p>
             <!--backlog-->
-            <div class="col-sm-3 Backlog">
-              <div class="card bg-info mb-3 ">
+          <p style="color: red;" > {{errAuth}}</p>
+            <div class="col-sm-3 Backlog" style="width: 23%; ">
+              <div class="card bg-secondary mb-3 ">
                 <div class="card-body ">
                   <h5 class="card-title">Backlog</h5>
                   <div class="card kanban-todo" style="width: 100%; ">
@@ -20,7 +20,7 @@
               </div>
             </div>
             <!--Todo-->
-            <div class="col-sm-3 todo">
+            <div class="col-sm-3 todo" style="width: 23%; ">
               <div class="card bg-warning mb-3 ">
                 <div class="card-body kanban-doing">
                   <h5 class="card-title">ToDo</h5>
@@ -37,7 +37,7 @@
               </div>
             </div>
             <!--doing-->
-            <div class="col-sm-3 doing">
+            <div class="col-sm-3 doing" style="width: 23%; ">
                 <div class="card bg-danger mb-3">
                   <div class="card-body">
                     <h5 class="card-title">Doing</h5>
@@ -54,7 +54,7 @@
                 </div>
             </div>
             <!--Done-->
-            <div class="col-sm-3 done">
+            <div class="col-sm-3 done" style="width: 23%; ">
                 <div class="card bg-success mb-3">
                   <div class="card-body">
                     <h5 class="card-title">Done</h5>

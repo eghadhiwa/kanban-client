@@ -66,7 +66,7 @@ export default {
     data(){
         return {
             halaman: 'login',
-            server: 'http://localhost:3000',
+            server: 'https://kanban-egha.herokuapp.com',
             tasks: [],
             edit:{
                 id: 0,
@@ -229,7 +229,7 @@ export default {
                 this.fetchAllTodo()
             })
             .catch(err =>{
-                console.log(err)
+                this.errAuth = err.response.data.message
             })
         },
         getEdit(id){
@@ -297,7 +297,7 @@ export default {
                 this.fetchAllTodo()
             })
             .catch(err =>{
-                console.log(err)
+                this.errAuth = err.response.data.message
             })
         },
         onSignInSuccess (googleUser) {

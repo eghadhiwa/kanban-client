@@ -1,11 +1,12 @@
 <template>
-     <div class="card-body bg-light mb-3" >
+     <div class="card-body bg-transparent mb-3" >
         <h5 class="card-title">{{item.title}}</h5>
         <p class="card-text">{{item.description}}</p>
-        <button type="button" class="btn btn-outline-dark btn-sm" @click="patch(item.id, panahKiri)"><</button>
-        <button type="button" class="btn btn-outline-info btn-sm" @click="getEdit(item.id)">Edit</button>
-        <button type="button" class="btn btn-outline-info btn-sm" @click="destroy(item.id)">Delete</button>
-        <button type="button" class="btn btn-outline-dark btn-sm" @click="patch(item.id, panahKanan)">></button>
+        <p class="card-text"> <small class="text-muted"> From: {{item.User.fullname}}</p>
+        <button type="button" class="btn btn-outline-dark btn-sm" @click.prevent="patch(item.id, panahKiri)"><</button>
+        <button type="button" class="btn btn-outline-dark btn-sm" @click.prevent="getEdit(item.id)">Edit</button>
+        <button type="button" class="btn btn-outline-dark btn-sm" @click.prevent="destroy(item.id)">Delete</button>
+        <button type="button" class="btn btn-outline-dark btn-sm" @click.prevent="patch(item.id, panahKanan)">></button>
         
     </div>
 </template>

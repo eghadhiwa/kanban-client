@@ -20,7 +20,7 @@
                     <option value="done">done</option>
                   </select>
             </div>
-            <button type="submit" class="btn btn-primary" @click=" addTodo()">Submit</button>
+            <button type="submit" class="btn btn-primary" @click.prevent=" addTodo()">Add</button>
         </form>
     </div>
 </template>

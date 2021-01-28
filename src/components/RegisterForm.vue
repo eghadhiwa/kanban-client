@@ -15,7 +15,7 @@
                 <label for="exampleInputPassword1" class="form-label">Full Name</label>
                 <input type="text" class="form-control" v-model="regist.fullname" id="fullname-regis">
             </div>
-            <button type="submit" class="btn btn-primary" @click=" register()">Submit</button>
+            <button type="submit" class="btn btn-primary" @click.prevent=" register()">Register</button>
         </form>
     </div>
 </template>
